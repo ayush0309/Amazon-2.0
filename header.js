@@ -11,12 +11,9 @@ function getCartItems() {
 
 function setCartCounter(totalCount) {
     // cart-item-number
-    if(totalCount == 0) {
-        document.querySelector(".cart-item-number").classList.add("opacity-0");
-    }
-    else {
+    if(totalCount !== 0) {
         document.querySelector(".cart-item-number").classList.remove("opacity-0");
-        
+
         document.querySelector(".cart-item-number").innerText = totalCount;
     }
     
